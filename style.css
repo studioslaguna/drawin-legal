@@ -1,0 +1,42 @@
+:root {
+  --bg: #fff8ef;
+  --card: #ffffff;
+  --ink: #2b2b3a;
+  --soft: #5d6072;
+  --pink: #e0418a;
+  --line: #f0e4d4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1c24;
+    --card: #27262f;
+    --ink: #f3f1ee;
+    --soft: #b9b6c4;
+    --pink: #ff79b4;
+    --line: #3a3843;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+header img { width: 64px; height: 64px; border-radius: 15px; }
+header a { color: inherit; text-decoration: none; }
+header strong { font-size: 24px; display: block; }
+header span { color: var(--soft); font-size: 15px; }
+nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; font-size: 15px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; margin-bottom: 20px; }
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 20px; margin: 28px 0 8px; }
+.card > h2:first-child { margin-top: 0; }
+.muted { color: var(--soft); font-size: 15px; }
+a { color: var(--pink); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 32px; }
